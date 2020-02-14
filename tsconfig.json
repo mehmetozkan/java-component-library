@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "java-component-library": [
+        "dist/java-component-library"
+      ],
+      "java-component-library/*": [
+        "dist/java-component-library/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
