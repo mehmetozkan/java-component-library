@@ -5,14 +5,8 @@ import {Observable, of} from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class JavaComponentLibraryService implements PreloadingStrategy {
+export class JavaComponentLibraryService {
 
   constructor() { }
-  preload(route: Route, load: () => Observable<any>): Observable<any> {
-    if (route.data && route.data.preload) {
-      return load();
-    } else {
-      return of(null);
-    }
-  }
+
 }

@@ -1,19 +1,21 @@
 import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {PreloadAllModules, RouterModule, Routes} from '@angular/router';
 import {JavaComponentLibraryComponent} from './java-component-library.component';
+import {CommonModule} from '@angular/common';
+import { UserpageComponent } from './userpage/userpage.component';
+import { StockpageComponent } from './stockpage/stockpage.component';
 
-
-const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' }];
 
 @NgModule({
-  declarations: [JavaComponentLibraryComponent],
   imports: [
-    CommonModule,
-    RouterModule.forRoot(routes, {preloadingStrategy: PreloadAllModules})
+    CommonModule
   ],
-  exports: [JavaComponentLibraryComponent]
+  declarations: [
+    JavaComponentLibraryComponent,
+    UserpageComponent,
+    StockpageComponent
+  ],
+  exports: [
+    JavaComponentLibraryComponent
+  ]
 })
-export class JavaComponentLibraryModule {
-}
+export class JavaComponentLibraryModule { }
