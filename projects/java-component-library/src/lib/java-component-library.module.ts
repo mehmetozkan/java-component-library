@@ -1,8 +1,8 @@
 import {NgModule} from '@angular/core';
 import {JavaComponentLibraryComponent} from './java-component-library.component';
 import {CommonModule} from '@angular/common';
-import { UserpageComponent } from './userpage/userpage.component';
-import { StockpageComponent } from './stockpage/stockpage.component';
+import {UserpageComponent} from './userpage/userpage.component';
+import {StockpageComponent} from './stockpage/stockpage.component';
 
 
 @NgModule({
