@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'lib-mainpage',
@@ -7,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mainpage.component.css']
 })
 export class MainpageComponent implements OnInit {
+
+  href = '';
   types = null;
-  constructor() { }
+  public route: string;
+
+  constructor(private rte: Router) {
+  }
 
   ngOnInit() {
+    this.route = this.rte.url;
+
+    console.log(this.route);
   }
 
   onclicktype(name) {

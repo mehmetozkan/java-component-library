@@ -5,12 +5,14 @@ import {UserpageComponent} from './userpage/userpage.component';
 import {StockpageComponent} from './stockpage/stockpage.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import {PreloadAllModules, RouterModule, Routes} from '@angular/router';
+import { CartComponent } from './shop/cart/cart.component';
+import { CheckoutComponent } from './shop/checkout/checkout.component';
+import { ConfirmComponent } from './shop/confirm/confirm.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'main',  component: MainpageComponent},
-  { path: 'users',  component: UserpageComponent },
-  { path: 'stock',  component: StockpageComponent }
+  { path: 'home', component: StockpageComponent },
+  {path: '**', redirectTo: 'home', pathMatch: 'full'},
 ];
 
 @NgModule({
@@ -22,7 +24,10 @@ const routes: Routes = [
     JavaComponentLibraryComponent,
     UserpageComponent,
     StockpageComponent,
-    MainpageComponent
+    MainpageComponent,
+    CartComponent,
+    CheckoutComponent,
+    ConfirmComponent
   ],
   exports: [
     JavaComponentLibraryComponent
