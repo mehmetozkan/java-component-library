@@ -2,8 +2,8 @@ import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'lib-java-component-library',
-  template: `
-    <lib-userpage></lib-userpage> <br/>
+  template: `<lib-mainpage></lib-mainpage>
+    <br/>
     <p *ngIf="message">
       Girilen Karakter Sayısı {{message.length}}
     </p>

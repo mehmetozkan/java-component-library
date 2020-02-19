@@ -1,0 +1,5 @@
+<p (click)="onclicktype('stockpage')">stockpage</p>
+<p (click)="onclicktype('userpage')">userpage</p>
+
+<lib-userpage *ngIf="types ==='userpage'"></lib-userpage>
+<lib-stockpage *ngIf="types ==='stockpage'"></lib-stockpage>
