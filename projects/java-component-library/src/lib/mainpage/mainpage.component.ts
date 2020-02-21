@@ -17,7 +17,6 @@ export class MainpageComponent implements OnInit {
 
   ngOnInit() {
     this.route = this.rte.url;
-
     console.log(this.route);
   }
 

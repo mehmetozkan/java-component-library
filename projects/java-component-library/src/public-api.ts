@@ -10,3 +10,4 @@ export * from './lib/mainpage/mainpage.component';
 export * from './lib/userpage/userpage.component';
 export * from './lib/stockpage/stockpage.component';
 export * from './lib/shop/cart/cart.component';
+export * from './lib/navbar/navbar.component';

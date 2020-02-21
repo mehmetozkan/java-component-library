@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {JavaComponentLibraryModule} from '../../../java-component-library/src/lib/java-component-library.module';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {StockpageComponent} from '../../../java-component-library/src/lib/stockpage/stockpage.component';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,8 @@ import {JavaComponentLibraryModule} from '../../../java-component-library/src/li
   ],
   imports: [
     BrowserModule,
-    JavaComponentLibraryModule
+    JavaComponentLibraryModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
